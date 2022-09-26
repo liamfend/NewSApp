@@ -256,6 +256,8 @@ dependencies {
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
 
+    api 'com.tencent.mm.opensdk:wechat-sdk-android:6.8.15'
+
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
         exclude group:'com.facebook.fbjni'
     }
@@ -277,6 +279,8 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+
+    
 }
 
 if (isNewArchitectureEnabled()) {
